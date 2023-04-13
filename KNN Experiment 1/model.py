@@ -42,8 +42,8 @@ def main():
     steam_train = pd.read_csv("Data/steam_reviews_testing.csv")
     steam_test = pd.read_csv("Data/steam_reviews_testing.csv")
 
-    steam_train["helpful_binary"] = steam_train["helpful"] >= 1
-    steam_test["helpful_binary"] = steam_test["helpful"] >= 1
+    steam_train["helpful_binary"] = steam_train["helpful"]
+    steam_test["helpful_binary"] = steam_test["helpful"]
 
     arr = []
     for line in steam_train["review"]:
@@ -55,9 +55,9 @@ def main():
         arr.append(text)
 
     X_train = arr
-    Y_train = steam_train["helpful_binary"]
-    arr = []
+    Y_train = list(steam_train["helpful_binary"])
 
+    arr = []
     for line in steam_test["review"]:
         line = str(line)
         text = preprocess.removeSGML(line)
@@ -67,7 +67,7 @@ def main():
         arr.append(text)
     
     X_test = arr
-    Y_test = steam_test["helpful_binary"]
+    Y_test = list(steam_test["helpful_binary"])
 
     classifier = KNN_Classifer(k=1, distance_type='path')
     classifier.fit(X_train, Y_train)
