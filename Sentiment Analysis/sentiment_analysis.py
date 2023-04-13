@@ -1,6 +1,9 @@
 import csv
 from collections import defaultdict
 import random
+import os
+
+os.chdir('..')
 
 negative_words = ['immersive', 'engaging', 'entertaining', 'addicting', 'satisfying',
                   'enjoyable', 'impressive', 'thrilling', 'captivating', 'exhilarating',
