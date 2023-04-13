@@ -15,16 +15,18 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import ConfusionMatrixDisplay
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
 from sklearn.metrics import f1_score
 
 # An option to switch between predicting helpfulness and recommendation. 
 # The group has decided that the main focus is helpfuless.
-TARGET = 'review'
+TARGET = 'helpful'
 # Data filename
-FPATH = 'steam_reviews.csv'
+FPATH = '../Data/steam_reviews.csv'
 
 # Embedding filename and embedding length
-EMBED_PATH = 'glove.twitter.27B/glove.twitter.27B.200d.txt'
+EMBED_PATH = 'smaller_glove.txt'
 EMBED_DIM = 200
 
 def yield_tokens(data_iterable):
@@ -127,6 +129,8 @@ def main():
 	test_preds = clf.predict(X_test_embedded)
 	print('Test acc:', accuracy_score(y_test, test_preds))
 	print('Test f-1:', f1_score(y_test, test_preds))
+	print('Test precision:', precision_score(y_test, test_preds))
+	print('Test recall:', recall_score(y_test, test_preds))
 
 	# Testing confusion matrix
 	disp = ConfusionMatrixDisplay.from_estimator(clf, X_test_embedded, y_test, normalize='true')
