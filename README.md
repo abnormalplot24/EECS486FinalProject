@@ -25,7 +25,7 @@ This experiment used a KNN model with K = 1 and Euclidean distance as the method
 To run the script:
 1. Navigate to the KNN Experiment 1 folder
 
-```python3 model.py```
+2. Run ```python3 model.py```
 <br>
 ### LR_glove_experiment
 
@@ -97,10 +97,8 @@ Requirements
 csv, collections, os, and random python libraries
 
 Running the Script
-Navigate to the Sentiment Analysis folder 
-'''cd "Sentiment Analysis'''
-run...
-'''python3 sentiment_analysis.py'''
+1. Navigate to the Sentiment Analysis folder ```cd "Sentiment Analysis```
+2. ```python3 sentiment_analysis.py```
 <br>
 ### KNN Experiment 2
 
