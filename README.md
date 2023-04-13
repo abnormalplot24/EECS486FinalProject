@@ -37,7 +37,7 @@ This may not be an exhaustive list, but to run the script on CAEN, the following
 3. pip3 install nltk
 
 Running the Script
-To run the script, execute:
+To run the script, navigate to the LR_glove_experiment folder and execute:
 python3 logistic_regression_glove.py
 The expected outputs are accuracy and f-1 scores from train and test as well as a confusion matrix graph display.
 <br>
@@ -95,7 +95,7 @@ Requirements
 csv, collections, os, and random python libraries
 
 Running the Script
-Go to the Sentiment Analysis folder and run...
+Navigate to the Sentiment Analysis folder and run... (cd "Sentiment Analysis")
 python3 sentiment_analysis.py
 <br>
 ### knearest.py
