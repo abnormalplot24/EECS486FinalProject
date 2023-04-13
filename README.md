@@ -3,11 +3,11 @@
 The project data and code submission is organized in the following way.
 In the home directory, we have:
 1. Data: the data folder for the main data files of the project.
-2. KNN Experiment: folder for scripts for the first KNN experiment.
+2. KNN Experiment 1: folder for scripts for the first KNN experiment.
 3. LR_glove_experiment: folder for scripts and embedding data for the LR glove experiment.
 4. Naive Bayes: folder for the scripts and stopword data for the naive bayes experiment.
 5. Sentiment Analysis: folder for the sentiment-analysis-based experiment.
-6. knearest.py: script for the second KNN experiment.
+6. KNN Experiment 2: folder for scripts for the second KNN experiment.
 
 ## These are the specific instructions for executing each of the 5 experiments.
 <br>
