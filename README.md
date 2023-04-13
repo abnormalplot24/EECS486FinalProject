@@ -95,8 +95,10 @@ Requirements
 csv, collections, os, and random python libraries
 
 Running the Script
-Navigate to the Sentiment Analysis folder and run... (cd "Sentiment Analysis")
-python3 sentiment_analysis.py
+Navigate to the Sentiment Analysis folder 
+$ cd "Sentiment Analysis"
+run...
+$ python3 sentiment_analysis.py
 <br>
 ### knearest.py
 
