@@ -97,7 +97,7 @@ Requirements
 csv, collections, os, and random python libraries
 
 Running the Script
-1. Navigate to the Sentiment Analysis folder ```cd "Sentiment Analysis```
+1. Navigate to the Sentiment Analysis folder ```cd "Sentiment Analysis"```
 2. ```python3 sentiment_analysis.py```
 <br>
 ### KNN Experiment 2
