@@ -24,6 +24,7 @@ This experiment used a KNN model with K = 1 and Euclidean distance as the method
 
 To run the script:
 1. Navigate to the KNN Experiment 1 folder
+
 ```python3 model.py```
 <br>
 ### LR_glove_experiment
