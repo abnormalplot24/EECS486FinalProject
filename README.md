@@ -102,6 +102,7 @@ Running the Script
 1. Navigate to the Sentiment Analysis folder ```cd "Sentiment Analysis"```
 2. ```python3 sentiment_analysis.py```
 <br>
+
 ### KNN Experiment 2
 
 libraries needed to import:
