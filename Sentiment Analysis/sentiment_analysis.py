@@ -1,35 +1,64 @@
 import csv
 from collections import defaultdict
 
+positive_words = ['excellent', 'great', 'good', 'wonderful', 'amazing', 'awesome', 
+                  'fantastic', 'terrific', 'superb', 'marvelous', 'lovely', 'delightful', 
+                  'incredible', 'outstanding', 'exceptional', 'brilliant', 'inspiring']
+
+negative_words = ['bad', 'terrible', 'horrible', 'awful', 'disgusting', 'dreadful', 'miserable', 
+                  'appalling', 'mediocre', 'disappointing', 'disastrous', 'tragic', 'atrocious', 
+                  'lousy', 'inferior', 'unacceptable', 'unsatisfactory', 'shoddy', 'wretched', 
+                  'pathetic', 'substandard']
+
 sentiment_lexicon = {
-        'excellent': 1.0,
-        'great': 0.9,
-        'good': 0.8,
-        'fine': 0.6,
-        'wonderful': 1.0,
-        'amazing': 0.9,
-        'awesome': 0.9,
-        'fantastic': 0.9,
-        'terrific': 0.8,
-        'superb': 0.8,
-        'phenomenal': 0.9,
-        'splendid': 0.8,
-        'marvelous': 0.8,
-        'fabulous': 0.7,
-        'neutral': 0.0,
-        'bad': -0.8,
-        'terrible': -0.9,
-        'horrible': -1.0,
-        'awful': -1.0,
-        'abysmal': -0.9,
-        'disgusting': -0.8,
-        'dreadful': -0.9,
-        'miserable': -0.8,
-        'repulsive': -0.9,
-        'ghastly': -0.9,
-        'appalling': -1.0,
-        'unpleasant': -0.6
-    }
+    'wonderful': 1.0,
+    'amazing': 1.0,
+    'excellent': 1.0,
+    'great': 0.9,
+    'fantastic': 0.9,
+    'awesome': 0.9,
+    'terrific': 0.8,
+    'superb': 0.8,
+    'marvelous': 0.8,
+    'incredible': 0.8,
+    'outstanding': 0.8,
+    'exceptional': 0.8,
+    'brilliant': 0.8,
+    'inspiring': 0.8,
+    'delightful': 0.8,
+    'lovely': 0.7,
+    'good': 0.7,
+    'neutral': 0.0,
+    'mediocre': -0.6,
+    'substandard': -0.6,
+    'inferior': -0.6,
+    'depressing': -0.7,
+    'dreary': -0.7,
+    'disappointing': -0.7,
+    'lousy': -0.7,
+    'shoddy': -0.7,
+    'unsatisfactory': -0.7,
+    'pitiable': -0.8,
+    'pitiful': -0.8,
+    'miserable': -0.8,
+    'unacceptable': -0.8,
+    'bad': -0.8,
+    'wretched': -0.8,
+    'pathetic': -0.8,
+    'disgusting': -0.8,
+    'vile': -0.8,
+    'gruesome': -0.8,
+    'ghastly': -0.9,
+    'repulsive': -0.9,
+    'atrocious': -0.9,
+    'disastrous': -0.9,
+    'dreadful': -0.9,
+    'terrible': -0.9,
+    'tragic': -0.9,
+    'appalling': -1.0,
+    'horrible': -1.0,
+    'awful': -1.0
+}
 
 def count_words(review, words, weights):
     count = 0
@@ -75,11 +104,6 @@ def test_classifier(test_file):
         print(f"Recall: {recall}")
 
 test_file = "Data/steam_reviews_testing.csv"
-
-# Define the positive and negative words
-positive_words = ['excellent', 'great', 'good', 'fine', 'wonderful', 'amazing', 'awesome', 'fantastic', 'terrific', 'superb', 'phenomenal', 'splendid', 'marvelous', 'fabulous']
-negative_words = ['bad', 'terrible', 'horrible', 'awful', 'abysmal', 'disgusting', 'dreadful', 'miserable', 'terrible', 'repulsive', 'ghastly', 'appalling', 'unpleasant']
-
 
 # Assign weights to the words based on the sentiment lexicon
 weights = defaultdict(float)
