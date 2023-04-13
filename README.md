@@ -12,7 +12,7 @@ In the home directory, we have:
 ## These are the specific instructions for executing each of the 5 experiments.
 <br>
 
-### KNN Experiment
+### KNN Experiment 1
 
 libraries needed to import:
 - pandas
@@ -100,7 +100,7 @@ $ cd "Sentiment Analysis"
 run...
 $ python3 sentiment_analysis.py
 <br>
-### knearest.py
+### KNN Experiment 2
 
 libraries needed to import:
 sys
