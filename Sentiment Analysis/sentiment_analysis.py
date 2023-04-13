@@ -127,7 +127,7 @@ for i in range(10):
 
     # Train the classifier and print the results
     results = classifier(train_file, weights)
-    print(f"Run {i + 1} - Results: {results}")
+    print(f"Weighting Scheme {i + 1} - Results: {results}")
 
     # Keep track of the best weights and accuracy
     if results['accuracy'] > best_accuracy:
