@@ -27,6 +27,7 @@ To run the script:
 
 2. Run ```python3 model.py```
 <br>
+
 ### LR_glove_experiment
 
 Overview
@@ -43,6 +44,7 @@ To run the script, navigate to the LR_glove_experiment folder and execute:
 python3 logistic_regression_glove.py
 The expected outputs are accuracy and f-1 scores from train and test as well as a confusion matrix graph display.
 <br>
+
 ### Naive Bayes
 
 Naive Bayes on a normalized steam review dataset
