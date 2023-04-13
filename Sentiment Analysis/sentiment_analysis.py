@@ -1,17 +1,45 @@
 import csv
+from collections import defaultdict
 
-def count_words(review, words):
+sentiment_lexicon = {
+        'excellent': 1.0,
+        'great': 0.9,
+        'good': 0.8,
+        'fine': 0.6,
+        'wonderful': 1.0,
+        'amazing': 0.9,
+        'awesome': 0.9,
+        'fantastic': 0.9,
+        'terrific': 0.8,
+        'superb': 0.8,
+        'phenomenal': 0.9,
+        'splendid': 0.8,
+        'marvelous': 0.8,
+        'fabulous': 0.7,
+        'neutral': 0.0,
+        'bad': -0.8,
+        'terrible': -0.9,
+        'horrible': -1.0,
+        'awful': -1.0,
+        'abysmal': -0.9,
+        'disgusting': -0.8,
+        'dreadful': -0.9,
+        'miserable': -0.8,
+        'repulsive': -0.9,
+        'ghastly': -0.9,
+        'appalling': -1.0,
+        'unpleasant': -0.6
+    }
+
+def count_words(review, words, weights):
     count = 0
     for word in words:
-        count += review.lower().count(word)
+        count += weights[word] * review.lower().count(word)
     return count
 
-positive_words = ['good', 'great', 'excellent', 'fun', 'enjoyable', 'recommended']
-negative_words = ['bad', 'terrible', 'poor', 'boring', 'disappointing', 'not recommended']
-
 def classify_review(review):
-    positive_count = count_words(review, positive_words)
-    negative_count = count_words(review, negative_words)
+    positive_count = count_words(review, positive_words, weights)
+    negative_count = count_words(review, negative_words, weights)
     if positive_count == 0 and negative_count == 0:
         return 'Unknown'
     elif positive_count >= 2 * negative_count:
@@ -47,6 +75,16 @@ def test_classifier(test_file):
         print(f"Recall: {recall}")
 
 test_file = "Data/steam_reviews_testing.csv"
+
+# Define the positive and negative words
+positive_words = ['excellent', 'great', 'good', 'fine', 'wonderful', 'amazing', 'awesome', 'fantastic', 'terrific', 'superb', 'phenomenal', 'splendid', 'marvelous', 'fabulous']
+negative_words = ['bad', 'terrible', 'horrible', 'awful', 'abysmal', 'disgusting', 'dreadful', 'miserable', 'terrible', 'repulsive', 'ghastly', 'appalling', 'unpleasant']
+
+
+# Assign weights to the words based on the sentiment lexicon
+weights = defaultdict(float)
+for word in positive_words + negative_words:
+    weights[word] = sentiment_lexicon[word]
 
 # Test the classifier
 test_classifier(test_file)
