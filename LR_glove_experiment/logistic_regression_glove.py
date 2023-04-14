@@ -23,7 +23,7 @@ from sklearn.metrics import f1_score
 # The group has decided that the main focus is helpfuless.
 TARGET = 'helpful'
 # Data filename
-FPATH = '../Data/steam_reviews.csv'
+FPATH = 'steam_reviews.csv'
 
 # Embedding filename and embedding length
 EMBED_PATH = 'smaller_glove.txt'
