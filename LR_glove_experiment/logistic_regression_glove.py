@@ -6,7 +6,6 @@ import pandas as pd
 import numpy as np
 import torchtext
 import matplotlib.pyplot as plt
-from cleantext import clean
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
