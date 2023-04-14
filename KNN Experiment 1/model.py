@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 import preprocess
@@ -39,6 +40,7 @@ class KNN_Classifer():
         return SequenceMatcher(None, s1, s2).ratio()
 
 def main():
+    os.chdir('..')
     steam_train = pd.read_csv("Data/steam_reviews_training.csv")
     steam_test = pd.read_csv("Data/steam_reviews_testing.csv")
 
