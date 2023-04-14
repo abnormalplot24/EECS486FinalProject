@@ -20,6 +20,10 @@ libraries needed to import:
 - numpy
 - sklearn
 
+Also make sure to download:
+- nltk.download('genesis')
+- nltk.download('wordnet')
+
 This experiment used a KNN model with K = 1 and Euclidean distance as the method to calculate distance.
 
 To run the script:
