@@ -223,7 +223,7 @@ def knn_regression(X_train, y_train, X_test, k):
         y_pred.append(sum(neighbors_y) / k)
     return y_pred
 
-with open('Data/steam_reviews_test.csv', 'r') as csvtest:
+with open('../Data/steam_reviews_test.csv', 'r') as csvtest:
     csvtest = csv.reader(csvtest)
     test_data = []
     test_y = []
@@ -236,7 +236,7 @@ with open('Data/steam_reviews_test.csv', 'r') as csvtest:
 
 
 
-with open('Data/steam_reviews_training.csv', 'r') as csvfile:
+with open('../Data/steam_reviews_training.csv', 'r') as csvfile:
     allreview = []
     # create a CSV reader object
     csvreader = csv.reader(csvfile)
