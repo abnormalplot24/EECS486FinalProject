@@ -69,7 +69,7 @@ Program was originally run on Windows 10 using Visual Studio Code ver. 1.77
 **Usage**
 Cleaning will only work on the original dataset (see introduction). It can be run in Linux by going to the top directory and running python3 cleaning.py will result in a cleaned csv titled english_cleaned.csv. This dataset is needed to proporly run Naive_Bayes_Normalizer.py. For your convinience, a copy of english_cleaned.csv should be provided in the github repository.
 The analyzer allows more customizability. It takes two arguments, the first being the training split you would like for the data, and the second being the number of non-helpful reviews you'd like to parse out of the dataset.
-For example, to run the analyzer with an 80-20 training-test split, and to remove 20% of non-helpful reviews in order to normalize, go to your top directory and run:
+For example, to run the analyzer with an 80-20 training-test split, and to remove 20% of non-helpful reviews in order to normalize, go to the folder containing your program, dataset and stopwords text file and run:
 python3 Naive_Bayes_Normalizer.py 0.8 0.2
 
 The program will print the number of helpful reviews in training, the number of non-helpful reviews in training, the number of helpful reviews in test, the precision and recall, and the accuracy.
