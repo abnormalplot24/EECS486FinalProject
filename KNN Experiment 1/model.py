@@ -5,6 +5,8 @@ import vectorspace
 import nltk
 from nltk.corpus import wordnet as wn
 from nltk.corpus import genesis
+nltk.download('genesis')
+nltk.download('wordnet')
 genesis_ic = wn.ic(genesis, False, 0.0)
 from nltk.tokenize import word_tokenize
 from difflib import SequenceMatcher
