@@ -103,6 +103,9 @@ Running the Script
 2. ```python3 sentiment_analysis.py``` <br>
 
 ### KNN Experiment 2
+Running the Script
+1. Navigate to the KNN2 folder
+2. python3 knearest.py
 
 libraries needed to import:
 sys
