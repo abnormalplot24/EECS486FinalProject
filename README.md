@@ -47,7 +47,7 @@ Other libraries used include matplotlib, pandas, numpy, and sklearn
 
 Running the Script <br>
 To run the script, navigate to the LR_glove_experiment folder and execute: <br>
-python3 logistic_regression_glove.py <br>
+```python3 logistic_regression_glove.py``` <br>
 The expected outputs are accuracy and f-1 scores from train and test as well as a confusion matrix graph display.
 <br>
 
