@@ -30,18 +30,18 @@ To run the script:
 
 ### LR_glove_experiment
 
-Overview
+Overview <br>
 logistic_regression_glove.py explores the combination of GloVE embeddings and logistic regression in order to predict whether a Steam review is helpful or not.
 
-Requirements
+Requirements <br>
 This may not be an exhaustive list, but to run the script on CAEN, the following additional libraries are needed:
 1. pip3 install torchtext
 2. pip3 install cleantext
 3. pip3 install nltk
 
-Running the Script
-To run the script, navigate to the LR_glove_experiment folder and execute:
-python3 logistic_regression_glove.py
+Running the Script <br>
+To run the script, navigate to the LR_glove_experiment folder and execute: <br>
+python3 logistic_regression_glove.py <br>
 The expected outputs are accuracy and f-1 scores from train and test as well as a confusion matrix graph display.
 <br>
 
