@@ -11,7 +11,6 @@ In the home directory, we have:
 
 ## These are the specific instructions for executing each of the 5 experiments.
 <br>
-
 ### KNN Experiment 1
 
 libraries needed to import:
@@ -31,7 +30,6 @@ To run the script:
 
 2. Run ```python3 model.py```
 <br>
-
 ### LR_glove_experiment
 
 Overview <br>
@@ -108,7 +106,6 @@ Running the Script
 1. Navigate to the Sentiment Analysis folder ```cd "Sentiment Analysis"```
 2. ```python3 sentiment_analysis.py```
 <br>
-
 ### KNN Experiment 2
 
 libraries needed to import:
