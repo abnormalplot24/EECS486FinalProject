@@ -76,9 +76,9 @@ def main():
     Y_pred = classifier.predict(X_test)
     conf_matrix = confusion_matrix(y_true=Y_test, y_pred=Y_pred)
     print(conf_matrix)
-    print(precision_score(Y_test, Y_pred))
+    print(precision_score(Y_test, Y_pred, zero_division=0))
     print(accuracy_score(Y_test, Y_pred))
-    print(recall_score(Y_test, Y_pred))
+    print(recall_score(Y_test, Y_pred, zero_division=0))
 
 if __name__ == "__main__":
     main()
