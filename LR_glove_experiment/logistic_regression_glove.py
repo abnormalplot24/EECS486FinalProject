@@ -60,7 +60,7 @@ def main():
 	df = pd.read_csv(FPATH)
 
 	# Preprocessing
-	df.review = df.review.apply(lambda r: clean(r))
+	#df.review = df.review.apply(lambda r: clean(r))
 	#df.review = df.review.apply(lambda r: ' '.join([w for w in r.split() if w not in stopwords.words('english')]))
 
 	# Ignore empty reviews
@@ -69,7 +69,7 @@ def main():
 
 	# Review labels are skewed: undersample class 0 to match the number of class 1
 	positive = df[df.helpful > 0]
-	negative_undersampled = df[df.helpful == 0].sample(35235, random_state=1)
+	negative_undersampled = df[df.helpful == 0].sample(30000, random_state=1)
 
 	# Recommendation labels are fairly balanced, so create finalized dataframe based on our purpose
 	if TARGET == 'recommendation':
