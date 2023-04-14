@@ -39,7 +39,7 @@ This may not be an exhaustive list, but to run the script on CAEN, the following
 1. pip3 install torchtext
 2. pip3 install cleantext
 3. pip3 install nltk
-4. fully update scikit learn
+4. fully update scikit learn (1.2.2)
 
 Other libraries used include matplotlib, pandas, numpy, and sklearn
 
