@@ -12,7 +12,7 @@ from collections import Counter
 CLEANR = re.compile('<.*?>') 
 
 
-
+print("Getting a runtime error, so this algorithm doesn't return an output, as mentioned in the report")
 
 def removeSGML(text):
     cleaned = text.lower() # convert text to lowercase
