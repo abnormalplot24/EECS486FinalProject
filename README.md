@@ -9,8 +9,7 @@ In the home directory, we have:
 5. Sentiment Analysis: folder for the sentiment-analysis-based experiment.
 6. KNN Experiment 2: folder for scripts for the second KNN experiment.
 
-## These are the specific instructions for executing each of the 5 experiments.
-<br>
+## These are the specific instructions for executing each of the 5 experiments. <br>
 
 ### KNN Experiment 1
 
@@ -46,8 +45,7 @@ Other libraries used include matplotlib, pandas, numpy, and sklearn
 Running the Script <br>
 To run the script, navigate to the LR_glove_experiment folder and execute: <br>
 ```python3 logistic_regression_glove.py``` <br>
-The expected outputs are accuracy and f-1 scores from train and test as well as a confusion matrix graph display.
-<br>
+The expected outputs are accuracy and f-1 scores from train and test as well as a confusion matrix graph display. <br>
 
 ### Naive Bayes
 
@@ -89,10 +87,8 @@ Credited to Devon Stein
 
 I can be reached at devonsteincollege@gmail.com or on my github repo of abnormalplot24
 
-
 Additional Information
-I hope you have a nice day :)
-<br>
+I hope you have a nice day :) <br>
 
 ### Sentiment Analysis
 
@@ -105,8 +101,7 @@ csv, collections, os, and random python libraries
 
 Running the Script
 1. Navigate to the Sentiment Analysis folder ```cd "Sentiment Analysis"```
-2. ```python3 sentiment_analysis.py```
-<br>
+2. ```python3 sentiment_analysis.py``` <br>
 
 ### KNN Experiment 2
 
