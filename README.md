@@ -104,7 +104,7 @@ Running the Script
 
 ### KNN Experiment 2
 Running the Script
-1. Navigate to the KNN2 folder
+1. Navigate to the KNN Experiment 2 folder
 2. python3 knearest.py
 
 libraries needed to import:
