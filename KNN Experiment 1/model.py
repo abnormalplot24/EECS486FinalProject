@@ -2,7 +2,6 @@ import os
 import pandas as pd
 import numpy as np
 import preprocess
-import vectorspace
 import nltk
 from nltk.corpus import wordnet as wn
 from nltk.corpus import genesis
