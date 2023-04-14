@@ -26,12 +26,12 @@ class KNN_Classifer():
         y_predict = []
 
         for i in range(len(x_test)):
-            max_sim = 0
+            max_similarity = 0
             max_index = 0
             for j in range(len(self.x_train)):
                 temp = self.similarity_score(x_test[i], self.x_train[j])
-                if temp > max_sim:
-                    max_sim = temp
+                if temp > max_similarity:
+                    max_similarity = temp
                     max_index = j
             y_predict.append(self.y_train[max_index])
         return y_predict
