@@ -39,6 +39,8 @@ This may not be an exhaustive list, but to run the script on CAEN, the following
 2. pip3 install cleantext
 3. pip3 install nltk
 
+Other libraries used include matplotlib, pandas, numpy, and sklearn
+
 Running the Script <br>
 To run the script, navigate to the LR_glove_experiment folder and execute: <br>
 python3 logistic_regression_glove.py <br>
