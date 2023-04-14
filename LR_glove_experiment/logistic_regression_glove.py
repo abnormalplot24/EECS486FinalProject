@@ -60,7 +60,7 @@ def main():
 	df = pd.read_csv(FPATH)
 
 	# Preprocessing
-	df.review = df.review.apply(lambda r: clean(r, no_line_breaks=True, no_punct=True, no_emoji=True))
+	df.review = df.review.apply(lambda r: clean(r, no_punct=True, no_emoji=True))
 	#df.review = df.review.apply(lambda r: ' '.join([w for w in r.split() if w not in stopwords.words('english')]))
 
 	# Ignore empty reviews
